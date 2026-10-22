@@ -96,7 +96,7 @@ contract Liars_Game {
     }
 
     mapping(bytes32 => Escrow) internal escrows;
-    mapping(address => bool) internal approvedTokens;
+    mapping(address => bool) public approvedTokens;
     mapping(address => mapping(address => uint256)) internal pendingWithdrawals;
 
 
